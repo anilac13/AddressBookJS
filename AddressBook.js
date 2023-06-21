@@ -91,18 +91,15 @@ class Contact {
 let contact = new Contact(1, "Soma", "Shekar", "Mittur", "Kolar", "Karnataka", "563123", "9087123456", "soma@email.com");
 console.log(contact.toString());
 
-try {
-    contact.id = 2;
-    contact.firstName = "Ram";
-    contact.lastName = "Kumar";
-    contact.address = "Bethamangala";
-    contact.city = "Kolar";
-    contact.state = "Karnataka";
-    contact.zip = "564433";
-    contact.phoneNumber = "7890123456";
-    contact.email = "ram@gmail.com";
-    console.log(contact.toString());
+let contactArray = new Array();
+try{
+    contact = new Contact(2,"Sanjana","Dhenge","Abcd","KoLhapur","Maharashtra","416012","9359923789","abc@gmail.com");
+    contactArray.push(contact);
+    contact = new Contact(3,"Radha","Patil","Defg","KoLhapur","Maharashtra","416022","9359915712","xyz@gmail.com");
+    contactArray.push(contact);
+    console.log(contactArray);
 }
-catch(e){
+catch
+{
     console.error(e);
 }
